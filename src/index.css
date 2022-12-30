@@ -1,0 +1,95 @@
+:root {
+  --bg-main: #eefafc;
+  --color-main: #05050f;
+  --color-var: #1a1a1d;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Inter", Helvetica, sans-serif;
+  color: var(--color-main);
+}
+
+body {
+  background-color: var(--bg-main);
+  padding: 0;
+  margin: 0;
+}
+.main {
+  min-width: 95vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.content {
+  margin-top: 2em;
+  width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+  .content {
+    width: 95%;
+  }
+}
+a {
+  color: #0059ff !important;
+}
+
+.positions {
+  display: flex;
+  flex-direction: column;
+}
+
+.position {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  padding: 1.5em 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.position:hover {
+  transform: scale(1.1);
+  transition: 0.35s ease-in-out;
+  box-shadow: 0 8px 8px -4px #eee;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 41.666667%;
+}
+.location svg {
+  margin-right: 5px;
+}
+
+.post-name {
+  font-weight: bold;
+  width: 33.333%;
+}
+.team {
+  width: 25%;
+}
+:not(.post-name span) {
+  color: var(--color-var);
+}
+.arrow {
+  width: max-content;
+  cursor: pointer;
+}
+
+svg {
+  width: 20px;
+  height: 20px;
+}
